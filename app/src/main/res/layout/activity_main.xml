@@ -50,9 +50,11 @@
             android:id="@+id/MyResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/view_pagesource"
             android:text="@string/content"
             android:textColor="@color/black"
             android:textSize="17dp"
+            android:padding="10dp"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="-73dp" />
     </ScrollView>
@@ -72,10 +74,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextView"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-2dp"
         android:layout_toEndOf="@+id/spinner"
         android:layout_toRightOf="@+id/spinner"
-        android:hint="www.google.com"
         android:ems="15"
+        android:hint="www.google.com"
         android:inputType="textPersonName"
         android:textSize="20dp" />
 
