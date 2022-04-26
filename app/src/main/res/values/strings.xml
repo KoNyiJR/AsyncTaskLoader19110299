@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsyncTaskLoader19110299</string>
+    <string name="content">Page source will appear here.</string>
+    <string-array name="name">
+        <item>https://</item>
+        <item>http://</item>
+
+    </string-array>
+</resources>

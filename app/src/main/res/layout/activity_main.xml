@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.asynctaskloader19110299.MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="\nEnter URL:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/scrollView2"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_marginTop="37dp"
+        android:background="@color/colorAccent"
+        android:onClick="DoSomething"
+        android:text="GET PAGE SOURCE"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="122dp">
+
+        <TextView
+            android:id="@+id/MyResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-73dp" />
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/name" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView"
+        android:layout_toEndOf="@+id/spinner"
+        android:layout_toRightOf="@+id/spinner"
+        android:hint="www.google.com"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+</RelativeLayout>
